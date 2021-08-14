@@ -301,10 +301,9 @@ textarea:hover {
 }
 
 .portfolio-background{
-  background:url('https://media.giphy.com/media/SYEwdw0SgVbTvtgrY3/giphy.gif');
+  background:url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif');
   background-size:cover;
   background-repeat:no-repeat;
-  opacity: 75%;
   width: 100%;
   margin: 0 auto;
 }
@@ -317,10 +316,10 @@ textarea:hover {
   left:0%;
   right: 0%;
   justify-content: center;
-  bottom: 1em;
   width: 100%;
-  bottom:7rem;
+  bottom:8rem;
 	top:7rem;
+
 }
 
 .site-row{
@@ -329,6 +328,7 @@ textarea:hover {
     left: 0%;
     right: 0%;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .site-row a{
@@ -339,11 +339,9 @@ textarea:hover {
 h1 {
   color: white;
   font-weight: 700;
+  font-size: 40px;
 }
 
-.icon-twitter {
-  color: white;
-}
 
 @media (max-width: 675px) {
  .portfolio-background {
