@@ -199,14 +199,8 @@ textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-/* body {
-  font-family: 'Lato', sans-serif;
-  background: #e2dedb;
-  color: #b3aca7;
-} */
-
 h2 {
-  font-family: "Lato";
+  font-family: "Lora";
   position: relative;
   margin: 100px 0 25px 0;
   font-size: 2.3em;
@@ -291,4 +285,78 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
+}
+/* HOMEPAGE */
+.button{
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color:white;
+  transition: ease 0.3s;
+  padding:8px;
+  font-size:20px;
+  font-weight:500;
+  margin-top:5px;
+  text-shadow: 4px 4px black;
+}
+
+.portfolio-background{
+  background:url('https://media.giphy.com/media/SYEwdw0SgVbTvtgrY3/giphy.gif');
+  background-size:cover;
+  background-repeat:no-repeat;
+  opacity: 75%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-content {
+  text-align: center;
+  position: absolute;
+  display:flex;
+	flex-flow:column;
+  left:0%;
+  right: 0%;
+  justify-content: center;
+  bottom: 1em;
+  width: 100%;
+  bottom:7rem;
+	top:7rem;
+}
+
+.site-row{
+	display: flex;
+    flex-flow: row;
+    left: 0%;
+    right: 0%;
+    justify-content: center;
+}
+
+.site-row a{
+	margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+  color: white;
+  font-weight: 700;
+}
+
+.icon-twitter {
+  color: white;
+}
+
+@media (max-width: 675px) {
+ .portfolio-background {
+   background: #b3aca7;
+ }
+ .portfolio-content {
+  text-align: center;
+  position: absolute;
+  left:0%;
+  right: 0%;
+  justify-content: center;
+  margin-top: 13rem;
+  display:flex;
+	flex-flow:column;
+ }
 }
