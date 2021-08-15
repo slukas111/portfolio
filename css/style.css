@@ -323,7 +323,7 @@ textarea:hover {
 
 @media (max-width: 800px) {
   .portfolio-background {
-    background: #ffffff;
+    background: #dcdcdc;
   }
   .portfolio-content {
     text-align: center;
