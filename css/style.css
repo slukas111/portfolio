@@ -396,6 +396,31 @@ textarea:hover {
   color: black;
   text-shadow: 2px 2px rgb(142, 138, 138);
 }
+#form {
+  position: relative;
+  width: 350px;
+  justify-content: center;
+  margin: 50px auto 100px auto;
+}
+#submit {
+  width: 347px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+}
+textarea {
+  width: 350px;
+  max-width: 325px;
+  height: 110px;
+  max-height: 110px;
+  padding: 10px;
+}
+input {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.875em;
+  width: 315px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+} 
 }
 
 /* Resume */
