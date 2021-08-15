@@ -52,12 +52,12 @@ Layout
 }
 
 header {
-  background: #b3aca7;
+  background: #b2b9bb;;
   padding: 2em 0;
 }
 
 footer {
-  background: #555b66;
+  background: #333937;
   color: white;
   text-align: center;
   padding: 2em 0;
@@ -317,7 +317,7 @@ textarea:hover {
 .portfolio-content h1 {
   color: white;
   font-weight: 700;
-  font-size: 40px;
+  font-size: px;
   text-shadow: 4px 4px rgb(28, 28, 28);
 }
 .portfolio-background {
