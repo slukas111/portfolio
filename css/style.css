@@ -141,28 +141,6 @@ nav a:focus {
 /* Contact Page */
 @import url(https://fonts.googleapis.com/css?family=Oswald:100,300,400);
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #1792d2;
-  font-size: 0.875em;
-}
-
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  color: #1792d2;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #1792d2;
-  font-size: 0.875em;
-}
-
-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder {
-  color: #1792d2;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: #1792d2;
@@ -187,27 +165,6 @@ textarea:focus::-ms-placeholder {
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder,
-textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-webkit-input-placeholder,
-textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
-}
-
-input:hover::-moz-placeholder,
-textarea:hover::-moz-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder,
-textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
-}
 
 input:hover::placeholder,
 textarea:hover::placeholder {
@@ -253,9 +210,7 @@ input {
   border-bottom: none;
 
   transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+
 }
 
 input:hover {
@@ -280,9 +235,9 @@ textarea {
   border: solid 1px #b3aca7;
 
   transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  /* -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; */
 }
 
 textarea:hover {
@@ -366,7 +321,7 @@ textarea:hover {
 }
 
 
-@media (max-width: 675px) {
+@media (max-width: 800px) {
   .portfolio-background {
     background: #ffffff;
   }
