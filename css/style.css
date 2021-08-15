@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #dcdcdc;
 }
 
 /* =================
@@ -11,17 +12,34 @@ Typography
 ================= */
 
 h1 {
-  font-family: "Lora", serif;
+  font-family: "Lora", serif, sans-serif;
   font-weight: 400;
   color: #143774;
   font-size: 2rem;
   margin: 0;
 }
 
+h2 {
+  font-family: "Lora";
+  /* position: relative; */
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+h3 {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px rgb(131, 130, 130);
+  color:rgb(46, 46, 46);
+  text-align: center;
+}
+
 .subtitle {
   font-weight: 700;
   color: #1792d2;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -33,7 +51,7 @@ Layout
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  flex-basis: 0;
+  /* flex-basis: 0; */
 }
 
 .container-flex {
@@ -52,13 +70,13 @@ Layout
 }
 
 header {
-  background: #b2b9bb;;
+  background: #c4ccce;
   padding: 2em 0;
 }
 
 footer {
-  background: #333937;
-  color: white;
+  background: #313936;
+  color: #c4ccce;;
   text-align: center;
   padding: 2em 0;
   margin-top: auto;
@@ -67,7 +85,7 @@ footer {
 
 }
 
-@media (max-width: 625px) {
+@media (max-width: 850px) {
   .container-nav {
     flex-direction: column;
   }
@@ -102,13 +120,13 @@ nav a:focus {
   color: #1792d2;
 }
 
-.current-page {
+/* .current-page {
   border-bottom: 1px solid #707070;
 }
 
 .current-page:hover {
   color: #707070;
-}
+} */
 
 @media (max-width: 675px) {
   nav ul {
@@ -213,14 +231,6 @@ textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-h2 {
-  font-family: "Lora";
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 7px;
-}
 
 #form {
   position: relative;
@@ -386,4 +396,13 @@ textarea:hover {
   color: black;
   text-shadow: 2px 2px rgb(142, 138, 138);
 }
+}
+
+/* Resume */
+
+.resume-content {
+  margin-bottom: 25px;
+  text-align: center;
+  align-content: center;
+  padding: 0 40px 40px;
 }
