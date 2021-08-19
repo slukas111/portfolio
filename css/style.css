@@ -12,14 +12,6 @@ body {
   flex-direction: column;
   background-color: #dcdcdc;
 }
-/* main {
-  /* display: grid;
-  place-content: center;  */
-  /* margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  margin: 0; */
-
 
 /* =================
 Typography
@@ -34,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Lora";
+  font-family: "Lora", serif, sans-serif;
   margin: 100px 0 25px 0;
   font-size: 2.3em;
   text-align: center;
@@ -54,6 +46,10 @@ h3 {
   color: #1792d2;
   font-size: 1rem;
   margin: 0;
+}
+p {
+  line-height: 1.2;
+  margin-top: 10px;
 }
 
 /* =================
@@ -84,7 +80,7 @@ Layout
 
 header {
   background: #c4ccce;
-  padding: 2em 0;
+  padding: 2em 0 0;
 }
 
 footer {
@@ -101,7 +97,7 @@ footer {
   .container-nav {
     flex-direction: column;
   }
-
+  
   header {
     text-align: center;
   }
@@ -144,7 +140,7 @@ nav a:focus {
   nav ul {
     flex-direction: column;
   }
-
+  
   nav li {
     margin: 0.5em 0;
   }
@@ -211,14 +207,14 @@ input {
   width: 502px;
   height: 50px;
   padding: 0px 15px 0px 15px;
-
+  
   background: transparent;
   outline: none;
   color: #1792d2;
-
+  
   border: solid 1px #b3aca7;
   border-bottom: none;
-
+  
   transition: all 0.3s ease-in-out;
 }
 
@@ -233,16 +229,16 @@ textarea {
   height: 110px;
   max-height: 110px;
   padding: 15px;
-
+  
   background: transparent;
   outline: none;
-
+  
   color: #1792d2;
   font-family: "Oswald", sans-serif;
   font-size: 0.875em;
-
+  
   border: solid 1px #b3aca7;
-
+  
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -256,17 +252,17 @@ textarea:hover {
 
 #submit {
   width: 502px;
-
+  
   padding: 0;
   margin: -5px 0px 0px 0px;
-
+  
   font-family: "Oswald", sans-serif;
   font-size: 0.875em;
   color: #1792d2;
-
+  
   outline: none;
   cursor: pointer;
-
+  
   border: solid 1px #b3aca7;
   border-top: none;
 }
@@ -280,14 +276,12 @@ textarea:hover {
 .button {
   border: 0.2rem solid white;
   border-radius: 20px;
-  background-color: transparent;
-  color: white;
-  transition: ease 0.3s;
   padding: 8px;
   font-size: 20px;
   font-weight: 500;
   margin-top: 5px;
   text-shadow: 4px 4px black;
+  text-decoration: none;
 }
 
 .portfolio-content h1 {
@@ -324,11 +318,16 @@ textarea:hover {
   right: 0%;
   justify-content: center;
   margin-top: 2rem;
+  
 }
 
 .site-row a {
+  background-color: transparent;
+  color: white;
+  transition: ease 0.3s;
   margin-left: 10px;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 /* Resume */
@@ -397,6 +396,15 @@ textarea:hover {
     height: 50px;
     padding: 0px 15px 0px 15px;
   }
+  .about-description p{
+    margin-left: 4.5rem;
+    width: revert;
+
+    
+  }
+  .about-img img {
+    margin-left: 6.5rem;
+  }
 }
 
 /* Work */
@@ -458,4 +466,32 @@ textarea:hover {
   font-size: 1.5em;
   float: right;
   text-decoration: none;
+}
+
+/* about */
+.about-title p{
+  text-align: center;
+  margin: 15px;
+  font-weight: 700;
+  color: #143774;
+  font-family: "Ubuntu";
+}
+.about-img {
+  width: 100%;
+}
+.about-description p{
+
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  margin-top: 20px;
+  
+}
+.about-img img {
+  float: left;
+  height: 200px;
+  width:220px;
+  border-radius: 50%;
+  padding: 1px;
+  border: 8px solid white;
 }
