@@ -1,11 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #dcdcdc;
 }
+/* main {
+  /* display: grid;
+  place-content: center;  */
+  /* margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  margin: 0; */
+
 
 /* =================
 Typography
@@ -21,18 +35,17 @@ h1 {
 
 h2 {
   font-family: "Lora";
-  /* position: relative; */
   margin: 100px 0 25px 0;
   font-size: 2.3em;
   text-align: center;
   letter-spacing: 7px;
 }
 h3 {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-weight: 700;
   font-size: 1.5rem;
   text-shadow: 2px 2px rgb(131, 130, 130);
-  color:rgb(46, 46, 46);
+  color: rgb(46, 46, 46);
   text-align: center;
 }
 
@@ -51,15 +64,15 @@ Layout
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  /* flex-basis: 0; */
+  padding: 1rem 0 1rem;
 }
 
 .container-flex {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 2em;
-  padding: 1em;
+  margin-bottom: 1rem;
+  padding: 1rem;
   border-bottom: 1em;
   flex-basis: 0;
 }
@@ -76,13 +89,12 @@ header {
 
 footer {
   background: #313936;
-  color: #c4ccce;;
+  color: #c4ccce;
   text-align: center;
-  padding: 2em 0;
+  padding: 2.75rem 0;
   margin-top: auto;
   border-top: 1em;
   flex-basis: 0;
-
 }
 
 @media (max-width: 850px) {
@@ -165,7 +177,6 @@ textarea:focus::-ms-placeholder {
 
 /* on hover placeholder */
 
-
 input:hover::placeholder,
 textarea:hover::placeholder {
   color: #e2dedb;
@@ -188,7 +199,6 @@ textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-
 #form {
   position: relative;
   width: 500px;
@@ -198,7 +208,7 @@ textarea:hover::focus:-ms-placeholder {
 input {
   font-family: "Oswald", sans-serif;
   font-size: 0.875em;
-  width: 470px;
+  width: 502px;
   height: 50px;
   padding: 0px 15px 0px 15px;
 
@@ -210,7 +220,6 @@ input {
   border-bottom: none;
 
   transition: all 0.3s ease-in-out;
-
 }
 
 input:hover {
@@ -219,8 +228,8 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 502px;
+  max-width: 502px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -235,9 +244,9 @@ textarea {
   border: solid 1px #b3aca7;
 
   transition: all 0.3s ease-in-out;
-  /* -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out; */
+  -ms-transition: all 0.3s ease-in-out;
 }
 
 textarea:hover {
@@ -265,9 +274,11 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 }
+
 /* HOMEPAGE */
+
 .button {
-  border: .2rem solid white;
+  border: 0.2rem solid white;
   border-radius: 20px;
   background-color: transparent;
   color: white;
@@ -282,7 +293,7 @@ textarea:hover {
 .portfolio-content h1 {
   color: white;
   font-weight: 700;
-  font-size: px;
+  /* font-size: px; */
   text-shadow: 4px 4px rgb(28, 28, 28);
 }
 .portfolio-background {
@@ -302,7 +313,7 @@ textarea:hover {
   right: 0%;
   justify-content: center;
   width: 100%;
-  bottom: 8rem;
+  bottom: 7.5rem;
   top: 7rem;
 }
 
@@ -320,6 +331,16 @@ textarea:hover {
   margin-right: 10px;
 }
 
+/* Resume */
+
+.resume-content {
+  margin-bottom: 25px;
+  text-align: center;
+  align-content: center;
+  padding: 0 40px 40px;
+}
+
+/*=========== Mobile Design========== */
 
 @media (max-width: 800px) {
   .portfolio-background {
@@ -336,7 +357,7 @@ textarea:hover {
     flex-flow: column;
   }
   .button {
-    border: .2rem solid rgb(63, 63, 63);
+    border: 0.2rem solid rgb(63, 63, 63);
     border-radius: 20px;
     background-color: transparent;
     color: rgb(33, 33, 33);
@@ -346,43 +367,95 @@ textarea:hover {
     font-weight: 500;
     margin-top: 5px;
     text-shadow: 2px 2px rgb(142, 138, 138);
-}
-.portfolio-content h1 {
-  color: black;
-  text-shadow: 2px 2px rgb(142, 138, 138);
-}
-#form {
-  position: relative;
-  width: 350px;
-  justify-content: center;
-  margin: 50px auto 100px auto;
-}
-#submit {
-  width: 347px;
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-}
-textarea {
-  width: 350px;
-  max-width: 325px;
-  height: 110px;
-  max-height: 110px;
-  padding: 10px;
-}
-input {
-  font-family: "Oswald", sans-serif;
-  font-size: 0.875em;
-  width: 315px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-} 
+  }
+  .portfolio-content h1 {
+    color: black;
+    text-shadow: 2px 2px rgb(142, 138, 138);
+  }
+  #form {
+    position: relative;
+    width: 347px;
+    justify-content: center;
+    margin: 50px auto 100px auto;
+  }
+  #submit {
+    width: 347px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+  }
+  textarea {
+    width: 350px;
+    max-width: 347px;
+    height: 110px;
+    max-height: 110px;
+    padding: 10px;
+  }
+  input {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.875em;
+    width: 347px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+  }
 }
 
-/* Resume */
+/* Work */
+.work-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem 2.5rem;
+}
 
-.resume-content {
-  margin-bottom: 25px;
-  text-align: center;
-  align-content: center;
-  padding: 0 40px 40px;
+.work-cards__item {
+  padding: .75rem;
+  border-radius: 0.25rem;
+  background-color: #c4ccce;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.work-cards__img img {
+  width: 100%;
+}
+
+.work-cards__title {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.work-cards__cat {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.work-cards__cat-item {
+  display: inline;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  background-color: #1792d2;
+  border-radius: 1rem;
+  
+}
+
+.work-cards__cat-item:hover {
+  background-color: rgb(67, 67, 245);
+}
+
+.work-cards__description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.work-cards__links a {
+  display: flex;
+  color: grey;
+  margin-right: 1rem;
+  padding: 5px;
+  font-size: 1.5em;
+  float: right;
+  text-decoration: none;
 }
